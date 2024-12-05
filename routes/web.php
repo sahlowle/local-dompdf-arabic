@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/pdf',[PdfController::class,'create']);
+Route::get('/pdf',[PdfController::class,'create'])->name('pdf');
 
 Route::get('/', function () {
     return view('welcome');
